@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84449FAD24A9D798007DF7FD /* WatchShaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84449FAC24A9D798007DF7FD /* WatchShaker.swift */; };
+		8454233E24A9CF6600B92B5A /* RollADice WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8454233D24A9CF6600B92B5A /* RollADice WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8454234424A9CF6600B92B5A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8454234224A9CF6600B92B5A /* Interface.storyboard */; };
+		8454234624A9CF6800B92B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8454234524A9CF6800B92B5A /* Assets.xcassets */; };
+		8454234D24A9CF6800B92B5A /* RollADice WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8454234C24A9CF6800B92B5A /* RollADice WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8454235224A9CF6800B92B5A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454235124A9CF6800B92B5A /* InterfaceController.swift */; };
+		8454235424A9CF6800B92B5A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454235324A9CF6800B92B5A /* ExtensionDelegate.swift */; };
+		8454235624A9CF6800B92B5A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454235524A9CF6800B92B5A /* NotificationController.swift */; };
+		8454235824A9CF6900B92B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8454235724A9CF6900B92B5A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8454233F24A9CF6600B92B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8454233324A9CF6500B92B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8454233C24A9CF6600B92B5A;
+			remoteInfo = "RollADice WatchKit App";
+		};
+		8454234E24A9CF6800B92B5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8454233324A9CF6500B92B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8454234B24A9CF6800B92B5A;
+			remoteInfo = "RollADice WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8454236024A9CF6900B92B5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8454234D24A9CF6800B92B5A /* RollADice WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8454236424A9CF6900B92B5A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8454233E24A9CF6600B92B5A /* RollADice WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84449FAC24A9D798007DF7FD /* WatchShaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchShaker.swift; sourceTree = "<group>"; };
+		8454233924A9CF6500B92B5A /* RollADice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollADice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8454233D24A9CF6600B92B5A /* RollADice WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RollADice WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8454234324A9CF6600B92B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8454234524A9CF6800B92B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8454234724A9CF6800B92B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8454234C24A9CF6800B92B5A /* RollADice WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RollADice WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8454235124A9CF6800B92B5A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8454235324A9CF6800B92B5A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8454235524A9CF6800B92B5A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8454235724A9CF6900B92B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8454235924A9CF6900B92B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8454235A24A9CF6900B92B5A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8454234924A9CF6800B92B5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8454233224A9CF6500B92B5A = {
+			isa = PBXGroup;
+			children = (
+				8454234124A9CF6600B92B5A /* RollADice WatchKit App */,
+				8454235024A9CF6800B92B5A /* RollADice WatchKit Extension */,
+				8454233A24A9CF6500B92B5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8454233A24A9CF6500B92B5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8454233924A9CF6500B92B5A /* RollADice.app */,
+				8454233D24A9CF6600B92B5A /* RollADice WatchKit App.app */,
+				8454234C24A9CF6800B92B5A /* RollADice WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8454234124A9CF6600B92B5A /* RollADice WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8454234224A9CF6600B92B5A /* Interface.storyboard */,
+				8454234524A9CF6800B92B5A /* Assets.xcassets */,
+				8454234724A9CF6800B92B5A /* Info.plist */,
+			);
+			path = "RollADice WatchKit App";
+			sourceTree = "<group>";
+		};
+		8454235024A9CF6800B92B5A /* RollADice WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8454235124A9CF6800B92B5A /* InterfaceController.swift */,
+				8454235324A9CF6800B92B5A /* ExtensionDelegate.swift */,
+				8454235524A9CF6800B92B5A /* NotificationController.swift */,
+				8454235724A9CF6900B92B5A /* Assets.xcassets */,
+				8454235924A9CF6900B92B5A /* Info.plist */,
+				8454235A24A9CF6900B92B5A /* PushNotificationPayload.apns */,
+				84449FAC24A9D798007DF7FD /* WatchShaker.swift */,
+			);
+			path = "RollADice WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8454233824A9CF6500B92B5A /* RollADice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8454236524A9CF6900B92B5A /* Build configuration list for PBXNativeTarget "RollADice" */;
+			buildPhases = (
+				8454233724A9CF6500B92B5A /* Resources */,
+				8454236424A9CF6900B92B5A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8454234024A9CF6600B92B5A /* PBXTargetDependency */,
+			);
+			name = RollADice;
+			productName = RollADice;
+			productReference = 8454233924A9CF6500B92B5A /* RollADice.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8454233C24A9CF6600B92B5A /* RollADice WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8454236124A9CF6900B92B5A /* Build configuration list for PBXNativeTarget "RollADice WatchKit App" */;
+			buildPhases = (
+				8454233B24A9CF6600B92B5A /* Resources */,
+				8454236024A9CF6900B92B5A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8454234F24A9CF6800B92B5A /* PBXTargetDependency */,
+			);
+			name = "RollADice WatchKit App";
+			productName = "RollADice WatchKit App";
+			productReference = 8454233D24A9CF6600B92B5A /* RollADice WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8454234B24A9CF6800B92B5A /* RollADice WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8454235D24A9CF6900B92B5A /* Build configuration list for PBXNativeTarget "RollADice WatchKit Extension" */;
+			buildPhases = (
+				8454234824A9CF6800B92B5A /* Sources */,
+				8454234924A9CF6800B92B5A /* Frameworks */,
+				8454234A24A9CF6800B92B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RollADice WatchKit Extension";
+			productName = "RollADice WatchKit Extension";
+			productReference = 8454234C24A9CF6800B92B5A /* RollADice WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8454233324A9CF6500B92B5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					8454233824A9CF6500B92B5A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					8454233C24A9CF6600B92B5A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					8454234B24A9CF6800B92B5A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 8454233624A9CF6500B92B5A /* Build configuration list for PBXProject "RollADice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8454233224A9CF6500B92B5A;
+			productRefGroup = 8454233A24A9CF6500B92B5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8454233824A9CF6500B92B5A /* RollADice */,
+				8454233C24A9CF6600B92B5A /* RollADice WatchKit App */,
+				8454234B24A9CF6800B92B5A /* RollADice WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8454233724A9CF6500B92B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8454233B24A9CF6600B92B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8454234624A9CF6800B92B5A /* Assets.xcassets in Resources */,
+				8454234424A9CF6600B92B5A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8454234A24A9CF6800B92B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8454235824A9CF6900B92B5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8454234824A9CF6800B92B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8454235624A9CF6800B92B5A /* NotificationController.swift in Sources */,
+				84449FAD24A9D798007DF7FD /* WatchShaker.swift in Sources */,
+				8454235424A9CF6800B92B5A /* ExtensionDelegate.swift in Sources */,
+				8454235224A9CF6800B92B5A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8454234024A9CF6600B92B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8454233C24A9CF6600B92B5A /* RollADice WatchKit App */;
+			targetProxy = 8454233F24A9CF6600B92B5A /* PBXContainerItemProxy */;
+		};
+		8454234F24A9CF6800B92B5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8454234B24A9CF6800B92B5A /* RollADice WatchKit Extension */;
+			targetProxy = 8454234E24A9CF6800B92B5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8454234224A9CF6600B92B5A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8454234324A9CF6600B92B5A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8454235B24A9CF6900B92B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8454235C24A9CF6900B92B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8454235E24A9CF6900B92B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U2FF7T2ASG;
+				INFOPLIST_FILE = "RollADice WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlazar83.RollADice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "RollADice WatchKitExtension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8454235F24A9CF6900B92B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U2FF7T2ASG;
+				INFOPLIST_FILE = "RollADice WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlazar83.RollADice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "RollADice WatchKitExtension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8454236224A9CF6900B92B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U2FF7T2ASG;
+				IBSC_MODULE = RollADice_WatchKit_Extension;
+				INFOPLIST_FILE = "RollADice WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlazar83.RollADice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RollADice WatchKitApp";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8454236324A9CF6900B92B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U2FF7T2ASG;
+				IBSC_MODULE = RollADice_WatchKit_Extension;
+				INFOPLIST_FILE = "RollADice WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlazar83.RollADice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RollADice WatchKitApp";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8454236624A9CF6900B92B5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U2FF7T2ASG;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlazar83.RollADice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RollADice App";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8454236724A9CF6900B92B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = U2FF7T2ASG;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlazar83.RollADice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RollADice App";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8454233624A9CF6500B92B5A /* Build configuration list for PBXProject "RollADice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454235B24A9CF6900B92B5A /* Debug */,
+				8454235C24A9CF6900B92B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8454235D24A9CF6900B92B5A /* Build configuration list for PBXNativeTarget "RollADice WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454235E24A9CF6900B92B5A /* Debug */,
+				8454235F24A9CF6900B92B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8454236124A9CF6900B92B5A /* Build configuration list for PBXNativeTarget "RollADice WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454236224A9CF6900B92B5A /* Debug */,
+				8454236324A9CF6900B92B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8454236524A9CF6900B92B5A /* Build configuration list for PBXNativeTarget "RollADice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454236624A9CF6900B92B5A /* Debug */,
+				8454236724A9CF6900B92B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8454233324A9CF6500B92B5A /* Project object */;
+}

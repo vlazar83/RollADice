@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RollADice_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="21" alignment="left" text=" " textAlignment="center" id="zq0-5M-yZ4"/>
+                        <label width="182" height="29" alignment="center" text="Roll A Dice" textAlignment="center" id="nGS-CK-Eug">
+                            <color key="textColor" red="0.093028629360000004" green="0.42368985799999997" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="180" height="82" alignment="center" text="0" textAlignment="center" id="x8h-ly-4WE">
+                            <color key="textColor" red="0.77291126939999999" green="0.37312693190000001" blue="0.2323796072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <group width="182" alignment="center" spacing="2" id="jd7-nT-EHB">
+                            <items>
+                                <button width="40" alignment="left" title="6D" id="qtm-ew-sfh">
+                                    <connections>
+                                        <action selector="button6DClicked" destination="AgC-eL-Hgc" id="dUX-2K-VLW"/>
+                                    </connections>
+                                </button>
+                                <button width="40" alignment="center" title="12D" id="oHs-d9-fxN">
+                                    <connections>
+                                        <action selector="button12DClicked" destination="AgC-eL-Hgc" id="FUC-aG-yuL"/>
+                                    </connections>
+                                </button>
+                                <button width="40" alignment="right" title="20D" id="bOy-2Z-cfU">
+                                    <connections>
+                                        <action selector="button20dClicked" destination="AgC-eL-Hgc" id="Czy-Dv-DeQ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="Label12D" destination="oHs-d9-fxN" id="BIr-3e-54j"/>
+                        <outlet property="Label20D" destination="bOy-2Z-cfU" id="0cL-WQ-tSU"/>
+                        <outlet property="Label6D" destination="qtm-ew-sfh" id="1y0-YH-YX6"/>
+                        <outlet property="resultLabel" destination="x8h-ly-4WE" id="42c-sD-5RR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="217.94871794871796" y="340.43589743589746"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="RollADice_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="RollADice_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
